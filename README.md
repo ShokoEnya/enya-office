@@ -1,24 +1,56 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリケーション概要
+司法書士事務所のホームページ
 
-Things you may want to cover:
+## 本番環境
+#### URL
 
-* Ruby version
+#### テスト用アカウント
+* name:　test
+* password: 123456
 
-* System dependencies
+## 利用方法
 
-* Configuration
+## 目指した課題解決
+相続など法律に関連する問題を抱えた人が事務所に訪れる前に、どのような業務を行っているのか、アクセス方法など事務所の概要を知ることが出来る
 
-* Database creation
+## 要件定義
+* ユーザー管理機能
+* トップページ、事務所紹介、業務内容、アクセス、料金表、個人情報取り扱いページへの遷移
+* 「お知らせ」投稿機能
 
-* Database initialization
+## 実装した機能の説明
+* ユーザー管理機能
+  - 原則として事務所の職員が使う機能
+  - URLを直接入力するとユーザー新規登録、ログインページに遷移する
+  - トップページやその他のページには新規登録、ログインページに遷移するボタンは表示されない
+  - ログインすると、ログアウトのボタンが表示される
 
-* How to run the test suite
+* 「お知らせ」投稿機能
+  - ログインしたユーザーのみ「お知らせ」の投稿、編集、削除ができる
+  - 投稿した「お知らせ」はトップページに表示される
 
-* Services (job queues, cache servers, search engines, etc.)
+## 実装予定の機能
 
-* Deployment instructions
+## データベース設計
+### Usersテーブル
+| Column   | Type   | Options     |
+| -------- | ------ | ----------- |
+| name     | string | null: false |
+| password | string | null: false |
 
-* ...
+### Informationsテーブル
+| Column | Type    | Options     |  
+| ------ | ------- | ----------- |
+| date   | integer | null: false |
+| title  | string  | null: false |
+| text   | text    | null: false |
+
+## 開発状況
+#### 開発環境
+Ruby / Ruby on Rails / MySQL / GitHub / VSCode
+
+#### 開発期間
+
+#### 平均作業時間
