@@ -1,0 +1,24 @@
+.footer {
+  background-color: #3232da;
+  height: 100px;
+  color: white;
+  text-align: center;
+}
+
+.office-info {
+  padding: 10px;
+}
+
+.name {
+  font-size: 15px;
+}
+
+.access {
+  font-size: 12px;
+}
+
+.copyright {
+  font-size: 10px;
+  color: aliceblue;
+  padding: px 0;
+}

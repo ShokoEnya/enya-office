@@ -1,0 +1,49 @@
+.site-header {
+  background-color: #F0F8FF;
+  height: 150px;
+}
+
+.top-contents {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+}
+
+.office-name {
+  color: #010174;
+  font-size: 35px;
+  text-align: center;
+}
+
+.contacts {
+  padding: 20px;
+}
+
+.text {
+  font-size: 13px;
+  color: #333333;
+}
+
+.tel {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222222;
+}
+
+.contents {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  font-size: 15px;
+  color: white;
+  background-color: #3232da;
+
+}
+
+.contents a {
+  text-decoration: none;
+  color: white;
+}
+
