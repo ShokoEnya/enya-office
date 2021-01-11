@@ -1,0 +1,61 @@
+.main {
+  height: calc(100vh - 150px - 100px);
+  overflow: scroll;
+}
+
+.view {
+  text-align: center;
+}
+
+.top-image {
+  height: 250px;
+  width: 800px;
+}
+
+.heading {
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px 30px;
+  font-size: 25px;
+}
+
+.informations {
+  margin-bottom: 100px;
+}
+
+.date {
+  color: gray;
+}
+
+.duties-form {
+  margin: 0 10%;
+}
+
+.duty {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 20px;
+}
+
+.title-box {
+  height: 100px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.duty-title {
+  background-color: rgb(250, 216, 124);
+  height: 70px;
+  width: 150px;
+  padding: 18px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.duty-descriptions {
+  width: calc( 100% - 150px) ;
+  padding-left: 30px;
+}
