@@ -1,0 +1,29 @@
+.intro-frame {
+  height: calc( 100vh - 150px - 100px );
+  overflow: auto;
+}
+
+.introductions {
+  text-align: center;
+  
+}
+
+.face-frame {
+  text-align: center;
+}
+
+.face-image {
+  height: 300px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-size: 16px;
+}
+
+table td {
+  border: solid 1px white;
+  background-color: rgb(240, 239, 239);
+  padding: 20px 40px;
+}
