@@ -55,6 +55,15 @@
   text-align: center;
 }
 
+.duty-title a {
+  text-decoration: none;
+  color: black;
+}
+
+.duty-title:hover {
+  background: rgb(252, 230, 169);
+}
+
 .duty-descriptions {
   width: calc( 100% - 150px) ;
   padding-left: 30px;
