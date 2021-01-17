@@ -12,9 +12,17 @@
   <ul class="contents">
     <li><%= link_to "トップページ", sites_index_path, local: true %></li>
     <li><%= link_to "事務所紹介", sites_introduction_path, local: true %></li>
-    <li>業務内容</li>
-    <li>料金表</li>
-    <li>アクセス</li>
-    <li>個人情報取り扱いについて</li>
+    <li><%= link_to "業務内容", "#" %>
+      <ul class="duties-index">
+        <li><%= link_to "不動産登記", sites_real_estate_path %></li>
+        <li><%= link_to "商業登記", "#" %></li>
+        <li><%= link_to "相続", "#" %></li>
+        <li><%= link_to "裁判関連", "#" %></li>
+        <li><%= link_to "債務整理", "#" %></li>
+      </ul>
+    </li>
+    <li><%= link_to "料金表", "#" %></li>
+    <li><%= link_to "アクセス", "#" %></li>
+    <li><%= link_to "個人情報取り扱いについて", "#" %></li>
   </ul>
 </header>

@@ -1,0 +1,16 @@
+.duty-heading {
+  text-align: center;
+  background-color: #f5f4e9;
+  height: 80px;
+  padding: 15px;
+  color: rgb(38, 70, 70);
+}
+
+.duty-contents {
+  margin: 30px 80px ;
+  font-size: 1em;
+}
+
+.duty-lists {
+  margin: 0 80px;
+}

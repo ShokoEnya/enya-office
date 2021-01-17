@@ -1,6 +1,6 @@
 <%= render "shared/header" %>
 
-<div class="main">
+<div class="frame">
   <div class="view">
     <%= image_tag "book.jpg", class: "top-image" %>
   </div>
@@ -27,7 +27,9 @@
   <div class="duties-form">
     <div class="duty">
       <div class="title-box">
-        <div class="duty-title">不動産登記</div>
+        <div class="duty-title">
+          <%= link_to "不動産登記", sites_real_estate_path %>
+        </div>
       </div>
       <div class="duty-descriptions">
         <div class="description">
