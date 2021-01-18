@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'sites/introduction'
   get 'sites/real_estate'
   get 'sites/commerce'
+  get 'sites/inheritance'
 end
