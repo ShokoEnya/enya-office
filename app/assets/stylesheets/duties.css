@@ -7,12 +7,14 @@
 }
 
 .duty-contents {
-  margin: 30px 100px ;
+  margin: 30px 100px;
   font-size: 1em;
+  line-height: 35px;
 }
 
 .duty-lists {
   margin: 0 80px;
+  line-height: 30px;
 }
 
 h2 {
@@ -36,5 +38,5 @@ table.testament-table thead tr th {
 table.testament-table th, table.testament-table tr, table.testament-table td {
   padding: 15px;
   border: dimgray solid 1px;
-
+  line-height: 30px;
 }
