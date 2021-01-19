@@ -1,5 +1,5 @@
-.main {
-  height: calc(100vh - 150px - 100px);
+.frame {
+  height: calc(100vh - 150px);
   overflow: scroll;
 }
 
@@ -53,6 +53,15 @@
   padding: 18px;
   font-size: 20px;
   text-align: center;
+}
+
+.duty-title a {
+  text-decoration: none;
+  color: black;
+}
+
+.duty-title:hover {
+  background: rgb(252, 230, 169);
 }
 
 .duty-descriptions {

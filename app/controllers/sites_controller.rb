@@ -4,4 +4,7 @@ class SitesController < ApplicationController
 
   def introduction
   end
+
+  def real_estate
+  end
 end

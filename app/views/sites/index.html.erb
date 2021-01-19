@@ -1,12 +1,12 @@
 <%= render "shared/header" %>
 
-<div class="main">
+<div class="frame">
   <div class="view">
     <%= image_tag "book.jpg", class: "top-image" %>
   </div>
-  <h2 class="heading">
+  <h3 class="heading">
     お知らせ
-  </h2>
+  </h3>
   <ul class="informations">
     <li class="information">
       <div class="date">2020/12/28</div>
@@ -17,7 +17,7 @@
     <li class="information">
       <div class="date">2020/12/15</div>
       <div class="info-text">
-        紹介いただいたお客様には5％割引いたします。
+        
       </div>
     </li>
   </ul>
@@ -27,7 +27,9 @@
   <div class="duties-form">
     <div class="duty">
       <div class="title-box">
-        <div class="duty-title">不動産登記</div>
+        <div class="duty-title">
+          <%= link_to "不動産登記", sites_real_estate_path %>
+        </div>
       </div>
       <div class="duty-descriptions">
         <div class="description">
@@ -41,7 +43,7 @@
   <div class="duties-form">
     <div class="duty">
       <div class="title-box">
-        <div class="duty-title">商業登記</div>
+        <div class="duty-title"><%= link_to "商業登記", sites_commerce_path %></div>
       </div>
       <div class="duty-descriptions">
         <div class="description">
@@ -55,7 +57,7 @@
   <div class="duties-form">
     <div class="duty">
       <div class="title-box">
-        <div class="duty-title">相続</div>
+        <div class="duty-title"><%= link_to "相続", sites_inheritance_path %></div>
       </div>
       <div class="duty-descriptions">
         <div class="description">
@@ -69,7 +71,7 @@
   <div class="duties-form">
     <div class="duty">
       <div class="title-box">
-        <div class="duty-title">裁判関連</div>
+        <div class="duty-title"><%= link_to "裁判関連", sites_lawsuit_path %></div>
       </div>
       <div class="duty-descriptions">
         <div class="description">
@@ -83,7 +85,7 @@
   <div class="duties-form">
     <div class="duty">
       <div class="title-box">
-        <div class="duty-title">債務整理</div>
+        <div class="duty-title"><%= link_to "債務整理", sites_liabilities_path %></div>
       </div>
       <div class="duty-descriptions">
         <div class="description">

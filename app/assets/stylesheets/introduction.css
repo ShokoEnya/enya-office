@@ -1,5 +1,5 @@
 .intro-frame {
-  height: calc( 100vh - 150px - 100px );
+  height: calc( 100vh - 150px);
   overflow: auto;
 }
 
@@ -16,13 +16,13 @@
   height: 300px;
 }
 
-table {
+table.intro-table {
   border-collapse: collapse;
   margin: 20px auto;
   font-size: 16px;
 }
 
-table td {
+table.intro-table td {
   border: solid 1px white;
   background-color: rgb(240, 239, 239);
   padding: 20px 40px;

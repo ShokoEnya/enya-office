@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  get 'sites/index'
   root to: "sites#index"
-  get 'sites/introduction' => 'sites#introduction'
+  get 'sites/index'
+  get 'sites/introduction'
+  get 'sites/real_estate'
+  get 'sites/commerce'
+  get 'sites/inheritance'
+  get 'sites/lawsuit'
+  get 'sites/liabilities'
 end
