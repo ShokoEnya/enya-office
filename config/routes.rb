@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get 'sites/inheritance'
   get 'sites/lawsuit'
   get 'sites/liabilities'
+  get 'sites/access'
 end
