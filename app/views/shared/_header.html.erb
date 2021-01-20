@@ -1,12 +1,24 @@
 <header>
   <div class="top-contents">
+    <ul class="user-command">  
+    <% if user_signed_in? %>
+      <li><%= link_to "編集", "#" %></li>
+      <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+    <% else %>
+      <%= link_to "▶︎", new_user_session_path %>
+    <% end %>
+    </ul>
+
+
     <h1 class="office-name">
       塩冶敬 司法書士事務所
     </h1>
-    <div class="contacts">
-      <div class="text">お問い合わせ</div>
-      <div class="tel">TEL 0852-27-3824</div>
-      <div class="text">受付時間 9:00 〜 17:30（土日祝日除く）</div>
+    <div class="right-head">
+      <div class="contacts">
+        <div class="text">お問い合わせ</div>
+        <div class="tel">TEL 0852-27-3824</div>
+        <div class="text">受付時間 9:00 〜 17:30（土日祝日除く）</div>
+      </div>
     </div>
   </div>
   <ul class="contents">
@@ -22,7 +34,6 @@
       </ul>
     </li>
     <li><%= link_to "料金表", "#" %></li>
-    <li><%= link_to "アクセス", sites_access_path %></li>
-    <li><%= link_to "個人情報取り扱いについて", "#" %></li>
+    <li><%= link_to "アクセス", "#" %></li>
   </ul>
 </header>
