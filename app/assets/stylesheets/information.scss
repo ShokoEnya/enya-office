@@ -1,3 +1,26 @@
-// Place all the styles related to the information controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.information {
+  width: 100%;
+  padding: 15px 10%;
+}
+
+.information-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: rgb(59, 59, 59);
+}
+
+.information-text {
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+.info-command a {
+  text-decoration: none;
+  margin-right: 5px;
+  padding: 3px 5px;
+  background-color: rgb(158, 65, 65);
+  color: white;
+  font-size: 14px;
+}

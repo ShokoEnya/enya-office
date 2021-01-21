@@ -7,20 +7,9 @@
   <h3 class="heading">
     お知らせ
   </h3>
-  <ul class="informations">
-    <li class="information">
-      <div class="date">2020/12/28</div>
-      <div class="info-text">
-        年末年始は12月28日〜1月4日までお休みします。
-      </div>
-    </li>
-    <li class="information">
-      <div class="date">2020/12/15</div>
-      <div class="info-text">
-        
-      </div>
-    </li>
-  </ul>
+  <div class="all-information">
+      <%= render partial: "information/information", collection: @information %>
+  </div>
   <h3 class="heading">
     業務内容
   </h3>
