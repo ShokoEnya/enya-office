@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get 'sites/lawsuit'
   get 'sites/liabilities'
   get 'sites/access'
+  resources :information, except: :show
 end
