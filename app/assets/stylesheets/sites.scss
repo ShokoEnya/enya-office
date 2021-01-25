@@ -4,19 +4,24 @@
 }
 
 .view {
-  text-align: center;
+  margin: 5px 10%;
 }
 
 .top-image {
-  height: 250px;
-  width: 800px;
+  height: 300px;
+  width: 100vw;
+}
+
+h3 {
+  height: 80px;
+  text-align: center;
+  background-color: lightgray;
+  padding: 20px 0;
 }
 
 .heading {
-  text-align: center;
-  background-color: lightgray;
-  padding: 10px 30px;
-  font-size: 25px;
+  font-size: 30px;
+  margin: 0 auto;
 }
 
 .all-information {

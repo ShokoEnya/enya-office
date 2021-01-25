@@ -3,17 +3,14 @@
   overflow: auto;
 }
 
-.introductions {
-  text-align: center;
-  
-}
-
 .face-frame {
+  margin: 0 auto;
   text-align: center;
 }
 
 .face-image {
   height: 300px;
+  display: inline-block;
 }
 
 table.intro-table {

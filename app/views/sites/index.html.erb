@@ -4,14 +4,18 @@
   <div class="view">
     <%= image_tag "book.jpg", class: "top-image" %>
   </div>
-  <h3 class="heading">
-    お知らせ
+  <h3>
+    <div class="heading">
+      お知らせ
+    </div>
   </h3>
   <div class="all-information">
       <%= render partial: "information/information", collection: @information %>
   </div>
-  <h3 class="heading">
-    業務内容
+  <h3>
+    <div class="heading">
+      業務内容
+    </div>
   </h3>
   <div class="duties-form">
     <div class="duty">
