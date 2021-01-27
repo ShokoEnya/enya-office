@@ -6,8 +6,6 @@ Rails.application.routes.draw do
   get 'sites/real_estate'
   get 'sites/commerce'
   get 'sites/inheritance'
-  get 'sites/lawsuit'
-  get 'sites/liabilities'
   get 'sites/access'
   resources :information, except: :show
 end
