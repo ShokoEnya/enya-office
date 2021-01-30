@@ -18,6 +18,19 @@ class InformationController < ApplicationController
     end
   end
 
+  def edit
+    @information = Information.find(params[:id])
+  end
+
+  def update
+    @information = Information.find(params[:id])
+    if @information.update(info_params)
+      redirect_to root_path
+    else
+      render :edit
+    end
+  end
+
   def destroy
     information = Information.find(params[:id])
     information.destroy

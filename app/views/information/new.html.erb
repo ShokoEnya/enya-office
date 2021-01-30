@@ -1,7 +1,8 @@
-<%= form_with model: @information, method: :post, class: 'form', local: true do |f| %>
-  <div class="form-input">
-    <%= f.text_field :title, class: 'info-title', placeholder: 'タイトル' %>
-    <%= f.text_area :text, class: 'info-text', placeholder: '「お知らせ」内容' %>
+<div class="information-layout">
+  <div class="inner">
+    <div class="form-wrapper">
+      <h4 class="page-heading">お知らせ新規投稿</h4>
+        <%= render partial: "form"%>
+    </div>
   </div>
-  <%= f.submit '送信', class: 'form-submit' %>
-<% end %>
+</div>
