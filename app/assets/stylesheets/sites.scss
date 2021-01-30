@@ -7,6 +7,8 @@
   margin: 5px 10%;
 }
 
+// トップページ
+
 .top-image {
   height: 300px;
   width: 100vw;
@@ -74,6 +76,82 @@ h3 {
   width: calc( 100% - 150px) ;
   padding-left: 30px;
 }
+
+// 事務所紹介ページ
+
+.intro-frame {
+  height: calc( 100vh - 150px);
+  overflow: auto;
+}
+
+.face-frame {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.face-image {
+  height: 300px;
+  display: inline-block;
+}
+
+table.intro-table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-size: 16px;
+}
+
+table.intro-table td {
+  border: solid 1px white;
+  background-color: rgb(240, 239, 239);
+  padding: 20px 40px;
+}
+
+// 業務内容のページ
+
+.duty-heading {
+  text-align: center;
+  background-color: #f5f4e9;
+  height: 80px;
+  padding: 15px;
+  color: rgb(38, 70, 70);
+}
+
+.duty-contents {
+  margin: 30px 100px;
+  font-size: 1em;
+  line-height: 35px;
+}
+
+.duty-lists {
+  margin: 0 80px;
+  line-height: 30px;
+}
+
+h2 {
+  border-bottom: solid 2px rgb(212, 212, 211);
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+table.testament-table {
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+table.testament-table thead tr th {
+  padding: 15px;
+  background-color: rgb(252, 233, 240);
+  text-align: center;
+  font-size: 18px;
+}
+
+table.testament-table th, table.testament-table tr, table.testament-table td {
+  padding: 15px;
+  border: dimgray solid 1px;
+  line-height: 30px;
+}
+
+// アクセスページ
 
 .map {
   text-align: center;
