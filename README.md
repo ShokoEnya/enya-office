@@ -5,9 +5,10 @@
 
 ## 本番環境
 #### URL
+https://enya-office.herokuapp.com/
 
 #### テスト用アカウント
-* name: テスト
+* name: test
 * password: 0000
 
 ## 利用方法
@@ -42,7 +43,6 @@
 ### Informationsテーブル
 | Column | Type    | Options     |  
 | ------ | ------- | ----------- |
-| date   | integer | null: false |
 | title  | string  | null: false |
 | text   | text    | null: false |
 
@@ -51,7 +51,7 @@
 Ruby / Ruby on Rails / MySQL / GitHub / VSCode
 
 #### 開発期間
-2021年1月7日から約3週間
+2021年1月7日から約4週間
 
 #### 平均作業時間
 8時間/日
