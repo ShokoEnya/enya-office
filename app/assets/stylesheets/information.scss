@@ -1,10 +1,12 @@
+// informationテンプレート
+
 .information {
   width: 100%;
   padding: 20px 10%;
 }
 
 .information-title {
-  font-size: 20px;
+  font-size: 1.3em;
   font-weight: bold;
   text-decoration: underline;
   text-underline-position: under;
@@ -13,7 +15,7 @@
 
 .information-text {
   padding: 5px 0;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .info-command a {
@@ -22,9 +24,11 @@
   padding: 3px 5px;
   background-color: rgb(158, 65, 65);
   color: white;
-  font-size: 14px;
+  font-size: 0.8em;
   border-radius: 2px;
 }
+
+// 新規投稿・編集ページ
 
 .information-layout {
   margin: 5%;
@@ -40,11 +44,13 @@
   background-color: rgb(245, 247, 245);
   color: rgb(26, 78, 1);
   border-radius: 5px;
-  font-size: 25px;
+  font-size: 1.5em;
   padding: 12px 0;
   margin-bottom: 30px;
   margin-left: 30px;
 }
+
+// formテンプレート
 
 .form-input {
   margin-bottom: 30px;

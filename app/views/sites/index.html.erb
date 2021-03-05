@@ -1,21 +1,16 @@
-<%= render "shared/header" %>
-
 <div class="frame">
+  <%= render "shared/header" %>
   <div class="view">
     <%= image_tag "book.jpg", class: "top-image" %>
   </div>
-  <h3>
-    <div class="heading">
+  <h3 class="heading">
       お知らせ
-    </div>
   </h3>
   <div class="all-information">
       <%= render partial: "information/information", collection: @information %>
   </div>
-  <h3>
-    <div class="heading">
+  <h3 class="heading">
       業務内容
-    </div>
   </h3>
   <div class="duties-form">
     <div class="duty">
@@ -61,6 +56,5 @@
       </div>
     </div>
   </div>
+  <%= render "shared/footer" %>
 </div>
-
-<%= render "shared/footer" %>

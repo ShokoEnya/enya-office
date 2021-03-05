@@ -10,15 +10,15 @@
 }
 
 .name {
-  font-size: 15px;
+  font-size: 1em;
 }
 
 .footer-access {
-  font-size: 12px;
+  font-size: 0.8em;
 }
 
 .copyright {
-  font-size: 10px;
+  font-size: 0.5em;
   color: aliceblue;
   padding: px 0;
 }

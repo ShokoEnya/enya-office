@@ -25,7 +25,7 @@ header {
   border: solid 1px firebrick;
   padding: 4px;
   margin-left: 5px;
-  font-size: 11px;
+  font-size: 0.3em;
   font-weight: bold;
   background-color: rgb(252, 243, 243);
   border-radius: 2px;
@@ -39,17 +39,18 @@ header {
 
 .office-name {
   color: #010174;
-  font-size: 35px;
+  font-size: 2.7em;
+  letter-spacing: 3px;
   text-align: center;
 }
 
 .text {
-  font-size: 13px;
+  font-size: 0.7em;
   color: #333333;
 }
 
 .tel {
-  font-size: 22px;
+  font-size: 1.3em;
   font-weight: bold;
   color: #222222;
 }
@@ -60,7 +61,6 @@ ul.contents {
   list-style: none;
   height: 50px;
   width: 100%;
-  font-size: 15px;
   background-color: #3232da;
   margin: 0 auto;
   padding: 0;

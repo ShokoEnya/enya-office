@@ -1,5 +1,5 @@
 .frame {
-  height: calc(100vh - 150px);
+  height: 100vh;
   overflow: scroll;
 }
 
@@ -22,16 +22,12 @@ h3 {
 }
 
 .heading {
-  font-size: 30px;
+  font-size: 2em;
   margin: 0 auto;
 }
 
 .all-information {
   margin-bottom: 100px;
-}
-
-.date {
-  color: gray;
 }
 
 .duties-form {
@@ -54,11 +50,11 @@ h3 {
 }
 
 .duty-title {
-  background-color: rgb(250, 216, 124);
+  background-color: rgb(247, 218, 139);
   height: 70px;
   width: 150px;
   padding: 18px;
-  font-size: 20px;
+  font-size: 1.3em;
   text-align: center;
   border-radius: 5px;
 }
@@ -75,14 +71,10 @@ h3 {
 .duty-descriptions {
   width: calc( 100% - 150px) ;
   padding-left: 30px;
+  font-size: 1em;
 }
 
 // 事務所紹介ページ
-
-.intro-frame {
-  height: calc( 100vh - 150px);
-  overflow: auto;
-}
 
 .face-frame {
   margin: 0 auto;
@@ -97,13 +89,13 @@ h3 {
 table.intro-table {
   border-collapse: collapse;
   margin: 20px auto;
-  font-size: 16px;
 }
 
 table.intro-table td {
   border: solid 1px white;
   background-color: rgb(240, 239, 239);
   padding: 20px 40px;
+  font-size: 1.1em;
 }
 
 // 業務内容のページ
@@ -135,14 +127,14 @@ h2 {
 
 table.testament-table {
   border-collapse: collapse;
-  margin: 20px auto;
+  margin: 20px 5%;
 }
 
 table.testament-table thead tr th {
   padding: 15px;
   background-color: rgb(252, 233, 240);
   text-align: center;
-  font-size: 18px;
+  font-size: 1em;
 }
 
 table.testament-table th, table.testament-table tr, table.testament-table td {
@@ -161,4 +153,74 @@ table.testament-table th, table.testament-table tr, table.testament-table td {
 .access {
   margin: 0 100px 40px;
   font-size: 1em;
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 599px) {
+  header {
+    height: 115px;
+  }
+  .top-contents {
+    display: block;
+  }
+  .office-name {
+    font-size: 1.7em;
+    width: 100%;
+    padding: 7px 0;
+  }
+  .right-head {
+    display: flex;
+  }
+  .contacts {
+    font-size: 0.7em;
+    padding-left: 8%;
+  }
+  #hamburger {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 35px;
+    margin: auto 8% 0 auto;
+    background-color: #3232da;
+    border-radius: 3px;
+  }
+  #hamburger span {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    display: block;
+    width: 70%;
+    height: 2px;
+    background-color: white;
+    transform: translateY(-50%);
+    border-radius: 1px;
+  }
+  #hamburger::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 15%;
+    width: 70%;
+    height: 2px;
+    background-color: white;
+    border-radius: 1px;
+  }
+  #hamburger::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 8px;
+    left: 15%;
+    width: 70%;
+    height: 2px;
+    background-color: white;
+    border-radius: 1px;
+  }
+  .pc-nav {
+    display: none;
+  }
 }
