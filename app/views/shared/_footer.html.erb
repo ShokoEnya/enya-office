@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer footer-dark" style="background-color: rgb(23, 45, 247);">
   <div class="office-info">
     <div class="name">
       塩冶敬司法書士事務所
@@ -13,4 +13,11 @@
   <div class="copyright">
     Copyright ©️ 塩冶敬司法書士事務所 All Rights Reserved.
   </div>
+    <% if user_signed_in? %>
+      <%= link_to "お知らせ投稿", new_information_path, class: "btn btn-danger btn-sm" %>
+      <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "btn btn-danger btn-sm" %>
+    <% else %>
+      <%= link_to "▶︎", new_user_session_path %>
+    <% end %>
+
 </footer>

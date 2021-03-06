@@ -1,60 +1,48 @@
-<div class="frame">
+<div class="container-fluid">
   <%= render "shared/header" %>
-  <div class="view">
-    <%= image_tag "book.jpg", class: "top-image" %>
-  </div>
-  <h3 class="heading">
+  <%= image_tag "book.jpg", class: "img-fluid" %>
+  <h2 class="heading">
       お知らせ
-  </h3>
-  <div class="all-information">
+  </h2>
+  <div class="row">
+    <div class="col">
       <%= render partial: "information/information", collection: @information %>
+    </div>
   </div>
-  <h3 class="heading">
+  <h2 class="heading">
       業務内容
-  </h3>
-  <div class="duties-form">
-    <div class="duty">
-      <div class="title-box">
-        <div class="duty-title">
-          <%= link_to "不動産登記", sites_real_estate_path %>
+  </h2>
+    <div class="row">
+      <div class="col-md">
+        <div class="duty-button">
+          <a class="btn btn-warning btn-lg" href="real_estate" role="button">不動産登記</a>
         </div>
+        <ul class="description">
+          <li>マイホームを新築したけど、どんな手続きが必要なの？</li>
+          <li>住宅ローンを払い終えた後はどうなるの？</li>
+          <li>不動産を売買するときに必要な手続きは？</li>
+        </ul>
       </div>
-      <div class="duty-descriptions">
-        <div class="description">
-          <div>マイホームを新築したけど、どんな手続きが必要なの？</div>
-          <div>住宅ローンを払い終えた後はどうなるの？</div>
-          <div>不動産を売買するときに必要な手続きは？</div>
+      <div class="col-md">
+        <div class="duty-button">
+          <a class="btn btn-warning btn-lg" href="commerce" role="button">商業登記</a>
         </div>
+        <ul class="description">
+          <li>新しく事業を始めたいけど、何を提出しないといけないの？</li>
+          <li>本店を移転しようと計画しているんだけど…</li>
+          <li>人事異動で役員が変更した</li>
+        </ul>
+      </div>
+      <div class="col-md">
+        <div class="duty-button">
+          <a class="btn btn-warning btn-lg" href="inheritance" role="button">相続</a>
+        </div>
+        <ul class="description">
+          <li>自分の死後に家族内で揉めないために遺言書をつくりたい</li>
+          <li>不動産の相続手続きはどうしたらいいの？</li>
+          <li>父親が他界した後に借金が発覚した！</li>
+        </ul>
       </div>
     </div>
-  </div>
-  <div class="duties-form">
-    <div class="duty">
-      <div class="title-box">
-        <div class="duty-title"><%= link_to "商業登記", sites_commerce_path %></div>
-      </div>
-      <div class="duty-descriptions">
-        <div class="description">
-          <div>新しく事業を始めたいけど、何を提出しないといけないの？</div>
-          <div>本店を移転しようと計画しているんだけど…</div>
-          <div>人事異動で役員が変更した</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="duties-form">
-    <div class="duty">
-      <div class="title-box">
-        <div class="duty-title"><%= link_to "相続", sites_inheritance_path %></div>
-      </div>
-      <div class="duty-descriptions">
-        <div class="description">
-          <div>自分の死後に家族内で揉めないために遺言書をつくりたい</div>
-          <div>不動産の相続手続きはどうしたらいいの？</div>
-          <div>父親が他界した後に借金が発覚した！</div>
-        </div>
-      </div>
-    </div>
-  </div>
   <%= render "shared/footer" %>
 </div>

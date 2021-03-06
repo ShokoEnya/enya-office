@@ -1,5 +1,4 @@
 .footer {
-  background-color: #3232da;
   height: 100px;
   color: white;
   text-align: center;
@@ -10,15 +9,14 @@
 }
 
 .name {
-  font-size: 1em;
+  font-size: 0.9rem;
 }
 
 .footer-access {
-  font-size: 0.8em;
+  font-size: 0.6rem;
 }
 
 .copyright {
-  font-size: 0.5em;
+  font-size: 0.5rem;
   color: aliceblue;
-  padding: px 0;
 }

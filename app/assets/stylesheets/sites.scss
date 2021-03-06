@@ -1,77 +1,47 @@
-.frame {
+.container {
   height: 100vh;
   overflow: scroll;
 }
 
-.view {
-  margin: 5px 10%;
+// ヘッダー(navbar)
+
+.navbar-brand {
+  font-size: 1.8rem;
 }
 
 // トップページ
 
-.top-image {
+.img-fluid {
   height: 300px;
   width: 100vw;
 }
 
-h3 {
-  height: 80px;
+h2 {
+  border-bottom: solid 2px rgb(212, 212, 211);
+  padding-top: 20px;
   text-align: center;
-  background-color: lightgray;
-  padding: 20px 0;
-}
-
-.heading {
-  font-size: 2em;
-  margin: 0 auto;
+  font-size: 1.7rem;
+  font-weight: bold;
 }
 
 .all-information {
   margin-bottom: 100px;
 }
 
-.duties-form {
-  margin: 0 10%;
+.row {
+  padding: 20px 5px;
 }
 
-.duty {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 30px 0;
-}
-
-.title-box {
-  height: 100px;
-  width: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.duty-title {
-  background-color: rgb(247, 218, 139);
-  height: 70px;
-  width: 150px;
-  padding: 18px;
-  font-size: 1.3em;
+.duty-button {
   text-align: center;
-  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.btn {
+  color: #fff;
 }
 
-.duty-title a {
-  text-decoration: none;
-  color: black;
-}
-
-.duty-title:hover {
-  background: rgb(252, 230, 169);
-}
-
-.duty-descriptions {
-  width: calc( 100% - 150px) ;
-  padding-left: 30px;
-  font-size: 1em;
+.description {
+  margin-bottom: 20px;
 }
 
 // 事務所紹介ページ
@@ -117,12 +87,6 @@ table.intro-table td {
 .duty-lists {
   margin: 0 80px;
   line-height: 30px;
-}
-
-h2 {
-  border-bottom: solid 2px rgb(212, 212, 211);
-  padding-left: 50px;
-  padding-top: 20px;
 }
 
 table.testament-table {
@@ -222,5 +186,8 @@ table.testament-table th, table.testament-table tr, table.testament-table td {
   }
   .pc-nav {
     display: none;
+  }
+  .img-fluid {
+    height: 150px;
   }
 }

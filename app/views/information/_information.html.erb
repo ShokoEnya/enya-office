@@ -1,18 +1,14 @@
-<div class="information">
-  <div class="upper-info">
+<div class="row">
+  <div class="col">
     <div class="information-title">
       <%= information.title %>
     </div>
-  </div>
-  <div class="lower-info">
     <div class="information-text">
       <%= information.text %>
     </div>
   </div>
   <% if user_signed_in? %>
-  <div class="info-command">
-    <%= link_to "編集", edit_information_path(information.id) %>
-    <%= link_to "削除", information_path(information.id), method: :delete %>
-  </div>
+    <%= link_to "編集", edit_information_path(information.id), class: "btn btn-danger btn-sm" %>
+    <%= link_to "削除", information_path(information.id), method: :delete, class: "btn btn-danger btn-sm" %>
   <% end %>
 </div>

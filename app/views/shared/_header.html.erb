@@ -1,36 +1,37 @@
-<header>
-  <div class="top-contents">
-    <ul class="user-command">  
-    <% if user_signed_in? %>
-      <li><%= link_to "お知らせ投稿", new_information_path %></li>
-      <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
-    <% else %>
-      <%= link_to "▶︎", new_user_session_path %>
-    <% end %>
-    </ul>
-
-    <h1 class="office-name"><b>
-      塩冶敬 司法書士事務所</b>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(23, 45, 247);">
+  <div class="container-fluid">
+    <h1 class="navbar-brand">
+      塩冶敬 司法書士事務所
     </h1>
-    <div class="right-head">
-      <div class="contacts">
-        <div class="text">お問い合わせ</div>
-        <div class="tel">TEL 0852-27-3824</div>
-        <div class="text">受付時間 9:00 〜 17:30（土日祝日除く）</div>
-      </div>
-      <div id="hamburger">
-        <span></span>
-      </div>
+    <span class="navbar-text">
+      <small>お問い合わせ</small><br>
+      <strong>TEL 0852-27-3824</strong><br>
+      <small>受付時間 9:00 〜 17:30（土日祝日除く）</small><br>
+    </span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index">トップページ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link", href="introduction">事務所紹介</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="real_estate">不動産登記</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="commerce">商業登記</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="inheritance">相続</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="access">アクセス</a>
+        </li>
+      </ul>
     </div>
   </div>
-  <nav class="pc-nav">
-    <ul class="contents">
-      <li><%= link_to "トップページ", sites_index_path %></li>
-      <li><%= link_to "事務所紹介", sites_introduction_path %></li>
-      <li><%= link_to "不動産登記", sites_real_estate_path %></li>
-      <li><%= link_to "商業登記", sites_commerce_path %></li>
-      <li><%= link_to "相続", sites_inheritance_path %></li>
-      <li><%= link_to "アクセス", sites_access_path %></li>
-    </ul>
-  </nav>
-</header>
+</nav>
