@@ -3,6 +3,17 @@
   overflow: scroll;
 }
 
+h2 {
+  border-top: solid 3px rgb(171, 174, 177);
+  border-bottom: solid 3px rgb(171, 174, 177);
+  background-color: rgb(228, 228, 228);
+  padding: 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
 // ヘッダー(navbar)
 
 .navbar-brand {
@@ -12,16 +23,7 @@
 // トップページ
 
 .img-fluid {
-  height: 300px;
   width: 100vw;
-}
-
-h2 {
-  border-bottom: solid 2px rgb(212, 212, 211);
-  padding-top: 20px;
-  text-align: center;
-  font-size: 1.7rem;
-  font-weight: bold;
 }
 
 .all-information {
@@ -29,7 +31,13 @@ h2 {
 }
 
 .row {
-  padding: 20px 5px;
+  padding: 30px 10px;
+}
+
+.col-md {
+  background-color: rgb(252, 248, 241);
+  margin: 10px;
+  padding: 15px;
 }
 
 .duty-button {
@@ -38,6 +46,7 @@ h2 {
 }
 .btn {
   color: #fff;
+  width: 150px;
 }
 
 .description {
@@ -56,55 +65,36 @@ h2 {
   display: inline-block;
 }
 
-table.intro-table {
-  border-collapse: collapse;
+.table {
   margin: 20px auto;
 }
 
-table.intro-table td {
-  border: solid 1px white;
-  background-color: rgb(240, 239, 239);
+.table th, .table td {
   padding: 20px 40px;
-  font-size: 1.1em;
+  font-size: 1rem;
 }
 
 // 業務内容のページ
 
-.duty-heading {
-  text-align: center;
-  background-color: #f5f4e9;
-  height: 80px;
-  padding: 15px;
-  color: rgb(38, 70, 70);
-}
-
-.duty-contents {
-  margin: 30px 100px;
-  font-size: 1em;
-  line-height: 35px;
-}
-
-.duty-lists {
-  margin: 0 80px;
-  line-height: 30px;
-}
-
-table.testament-table {
-  border-collapse: collapse;
-  margin: 20px 5%;
+h3 {
+  border-bottom: solid 3px darkgreen;
+  padding: 20px 0 10px 30px;
+  width: 300px;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: darkgreen;
 }
 
 table.testament-table thead tr th {
-  padding: 15px;
-  background-color: rgb(252, 233, 240);
+  padding: 10px;
+  background-color: rgb(233, 252, 236);
   text-align: center;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 table.testament-table th, table.testament-table tr, table.testament-table td {
-  padding: 15px;
-  border: dimgray solid 1px;
-  line-height: 30px;
+  padding: 5px;
 }
 
 // アクセスページ

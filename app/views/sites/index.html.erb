@@ -15,9 +15,9 @@
     <div class="row">
       <div class="col-md">
         <div class="duty-button">
-          <a class="btn btn-warning btn-lg" href="real_estate" role="button">不動産登記</a>
+          <%= link_to "不動産登記", sites_real_estate_path, class: "btn btn-warning btn-lg" %>
         </div>
-        <ul class="description">
+        <ul class="list">
           <li>マイホームを新築したけど、どんな手続きが必要なの？</li>
           <li>住宅ローンを払い終えた後はどうなるの？</li>
           <li>不動産を売買するときに必要な手続きは？</li>
@@ -25,9 +25,9 @@
       </div>
       <div class="col-md">
         <div class="duty-button">
-          <a class="btn btn-warning btn-lg" href="commerce" role="button">商業登記</a>
+          <%= link_to "商業登記", sites_commerce_path, class: "btn btn-warning btn-lg" %>
         </div>
-        <ul class="description">
+        <ul class="list">
           <li>新しく事業を始めたいけど、何を提出しないといけないの？</li>
           <li>本店を移転しようと計画しているんだけど…</li>
           <li>人事異動で役員が変更した</li>
@@ -35,9 +35,9 @@
       </div>
       <div class="col-md">
         <div class="duty-button">
-          <a class="btn btn-warning btn-lg" href="inheritance" role="button">相続</a>
+          <%= link_to "相続", sites_inheritance_path, class: "btn btn-warning btn-lg" %>
         </div>
-        <ul class="description">
+        <ul class="list">
           <li>自分の死後に家族内で揉めないために遺言書をつくりたい</li>
           <li>不動産の相続手続きはどうしたらいいの？</li>
           <li>父親が他界した後に借金が発覚した！</li>
